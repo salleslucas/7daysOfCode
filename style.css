@@ -1,0 +1,529 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --vermelho-principal: #8E2424;
+    --preto-principal: #101828;
+    --cinza-claro: #667085;
+    --footer-color: #98A2B3;
+    
+    --font_size-titulo-1-4: 48px;
+    --font_size-titulo-2-3: 36px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html, body{
+    width: 100vw;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+header{
+    width: 100vw;
+   height: 80px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    width:  100%;
+    max-width: 1200px;
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.6rem;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+
+.login_area{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0px 20px 0px 0px;
+    gap: 20px;
+   
+}
+button{
+    background-color: #8E2424;
+    color: white;
+    text-align: center;
+    border: none;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 8px;
+    width: 11.2rem;
+    font-size: 1.6rem;
+    height: 4.4rem;
+    cursor: pointer;
+}
+a{
+    color: var(--cinza-claro);
+    position: relative;
+    transition: .2s ease-out;}
+
+a::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to left,#8e2424de, rgb(255, 255, 255)) ;
+    height: 2px;
+    width: 0%;
+    left: -5px;
+    bottom: 0px;
+    border-radius: 0px 20px 20px 0px ;
+    transition: .2s ease-out;
+    
+}
+a:hover{
+    color: #101828;
+    font-weight: 500;
+    transition: .5s ease-in;
+}
+a:hover::after{
+    transition: .3s ease-in;
+    width: 100%;
+    
+}
+
+.menu_{
+   
+   display: none;
+}
+
+.porque_somos_diferentes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 407px;
+}
+
+#p-1{
+    color: #8E2424;
+    font-weight: 600;
+}
+
+.porque_somos_diferentes h1{
+    font-size: var(--font_size-titulo-1-4);
+    font-weight: 600;
+    color: #101828;
+    text-align: center;
+    width: 100%;
+    max-width: 980px;
+    font-size: 4.8rem;
+}
+
+.porque_somos_diferentes p{
+color: #667085;
+text-align: center;
+font-weight: 400;
+font-size: 2rem;
+line-height: 30px;
+margin: 0px 50px;
+}
+.metricas{
+     width: 100vw;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 288px;
+}
+.content{
+    width: 100%;
+    max-width: 1200px;
+    min-height: 192px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 6rem;
+    margin: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+}
+.metric-box{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 8px;
+    max-width: 280px;
+    
+}
+.metric-box h1{
+    color: var(--vermelho-principal);
+}
+
+.metric-text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+.metric-text h6{
+    font-size: 1.8rem;
+    color: var(--preto-principal);
+}
+
+.metric-text p{
+    font-size: 1.6rem;
+    color: var(--cinza-claro);
+}
+
+.vagas{
+    width: 100vw;
+}
+
+.container_talentos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1200px;
+    gap: 64px;
+}
+.conteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 200px;
+    margin: auto;
+    gap: 20px;
+}
+.conteudo h1{
+    text-align: center;
+    font-size: 3.8rem;
+}
+.conteudo p{
+    font-size: 2rem;
+    color: var(--cinza-claro);
+    text-align: center;
+}
+
+.container_talentos img{
+    width: 90%;
+}
+#p-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--vermelho-principal);
+    background-color:#8E24240D;
+    border-radius: 16px;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 12px;
+    height: 28px;
+}
+
+.vagas_abertas{
+    display: flex;
+    flex-direction: column;
+    
+
+    width: 100%;
+    gap: 30px;
+}
+
+.container_works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+
+.conteudo_works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    border-radius: 16px;
+    width: 100%;
+
+    margin: auto;
+    max-width: 780px;
+    padding: 24px 24px 28px 24px; 
+}
+.conteudo_works > p{
+    font-weight: 1.8rem;
+    color: var(--preto-principal);
+    font-weight: 500;
+}
+
+.work_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #EAECF0;
+    
+    gap: 24px;
+    border-radius: 16px;
+    width: 100%;
+
+    margin: auto;
+    max-width: 780px;
+    padding: 24px 24px 28px 24px; 
+}
+
+.work_details{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.work_details p{
+    color: var(--cinza-claro);
+
+}
+
+.depoimentos{
+    width: 100vw;
+    padding: 10px;
+    height: 500px;
+}
+
+.conteudo_depoiment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    gap: 20px;
+
+    background-color: #8e242408;
+}
+
+.depoiment_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+    gap: 20px;
+}
+.depoiment_text p{
+    font-weight: 600;
+    color: var(--vermelho-principal);
+    font-size: 1.6rem;          
+}
+
+.depoiment_text h1{
+    font-size: 3.6rem;
+}
+
+.depoiment_profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 10px;
+}
+
+footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #F9FAFB;
+    padding: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding: 96px 0px 40px 0px;
+    width: 100%;
+    max-width: 1200px;
+    gap: 30px;
+}
+.form_text {
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+}
+
+.btn_footer{
+    width: 144px;
+    cursor: pointer;
+}
+form{
+    width: 100%;
+}
+.form{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+.form input{
+
+    width: 100%;
+    max-width: 360px;
+    height: 48px;
+    border-radius: 8px;
+    padding: 10px;
+
+    border: 1px solid #D0D5DD;
+}
+
+footer > p{
+    font-size: 1.4rem;
+    color: var(--footer-color);
+}
+
+
+
+@media (max-width: 778px) {
+
+    html{
+        font-size: 45%;
+    }
+
+    .form_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+     p{
+        text-align: justify;
+     }
+     .btn_footer{
+        background-color: #8E2424;
+    color: white;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 112px;
+    height: 48px;
+     }
+
+} 
+
+
+
+@media (max-width: 515px){
+
+
+
+    .form{
+    
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .btn_footer{
+        width: 100%;
+    }
+
+    .depoiment_text h1{
+        font-size: 2rem;
+    }
+}
+
+
+
+@media (max-width: 644px){
+    html{
+        font-size: 50%;
+    }
+
+    .logo p{
+        font-size: 40px;
+    }
+
+
+    .menu, .login_area{
+        display: none;
+    }
+   
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu_{
+        display: block;
+        font-size: 30px;
+        padding: 0px 20px 0px 0px;
+        background: transparent;
+    }
+
+    .metric-box{
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 375px){
+    .logo p{
+        font-size: 20px;
+    }
+    .menu_{
+      
+        font-size: 20px;
+       
+    }
+
+}
